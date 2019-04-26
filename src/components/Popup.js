@@ -24,17 +24,17 @@ class Popup extends Component {
 
   render() {
     return (
-      <section class='col-lg-1'>
+      <section className='col-lg-1'>
         <div className='popup' onClick={this.props.closePopup}>
           <div className='popup_inner'>
             <div id="popup-content" onClick={this.handleOuterClick}>
-              <img id="popup-image" class="cover" src={this.state.data[this.props.popupIndex].coverPhoto} alt={this.state.data[this.props.popupIndex].title} height="350" width="350">
+              <img id="popup-image" className="cover" src={this.state.data[this.props.popupIndex].coverPhoto} alt={this.state.data[this.props.popupIndex].title} height="350" width="350">
               </img>
-              <h4 class="card-font">{this.state.data[this.props.popupIndex].title}</h4>
-              <p class="card-font">{this.state.data[this.props.popupIndex].description}</p>
-              <button id="return-button" class="btn btn-primary" onClick={this.props.closePopup}>Return to {this.props.contentType}s</button>
+              <h4 className="card-font">{this.state.data[this.props.popupIndex].title}</h4>
+              <p className="card-font">{this.state.data[this.props.popupIndex].description}</p>
+              <button id="return-button" className="btn btn-primary" onClick={this.props.closePopup}>Return to {this.props.contentType}s</button>
               <a href={this.state.data[this.props.popupIndex].amazonLink} target="_blank" rel="noopener noreferrer">
-                <button class="btn btn-success">Purchase on Amazon</button>
+                <button className="btn btn-success">Purchase on Amazon</button>
               </a>
             </div>
           </div>

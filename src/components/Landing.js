@@ -13,37 +13,37 @@ class Landing extends Component {
 
   render() {
     return(
-      <main class="container">
+      <main className="container">
           <section className="landing">
-            <header class="jumbotron my-4" alt="Story Spins banner image of spinning wheel">
-              <div class="container">
-                <h1 class="display-4" align="center">Welcome to Story Spins!</h1>
+            <header className="jumbotron my-4" alt="Story Spins banner image of spinning wheel">
+              <div className="container">
+                <h1 className="display-4" align="center">Welcome to Story Spins!</h1>
               </div>
             </header>
           </section>
-          <section class="row text-center">
+          <section className="row text-center">
               <section>
-                <p class="card-text">
+                <p className="card-text">
                   {this.state.data.landingText}
                 </p>
               </section>
-              <section class="col-lg-4">
+              <section className="col-lg-4">
                 <Link to="/books">
-                  <img src="assets/books.png" class="icons" alt="books icon link"></img>
+                  <img src="assets/books.png" className="icons" alt="books icon link"></img>
                 </Link>
-                <h4 class="card-title">Children's Books!</h4>
+                <h4 className="card-title">Children's Books!</h4>
               </section>
-              <section class="col-lg-4">
+              <section className="col-lg-4">
               <Link to="/videos">
-                <img src="assets/videos.png" class="icons" alt="videos icon link"></img>
+                <img src="assets/videos.png" className="icons" alt="videos icon link"></img>
               </Link>
-              <h4 class="card-title">Fun Videos!</h4>
+              <h4 className="card-title">Fun Videos!</h4>
               </section>
-              <section class="col-lg-4">
+              <section className="col-lg-4">
               <Link to="/spin-your-own-story">
-                <img src="assets/spinning-wheel.png" class="icons" alt="spinning-wheel icon link"></img>
+                <img src="assets/spinning-wheel.png" className="icons" alt="spinning-wheel icon link"></img>
               </Link>
-              <h4 class="card-title">Spin Your Story!</h4>
+              <h4 className="card-title">Spin Your Story!</h4>
               </section>
           </section>
       </main>

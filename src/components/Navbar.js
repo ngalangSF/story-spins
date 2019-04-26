@@ -54,10 +54,10 @@ class Navbar extends Component {
                     <img src="assets/spinning-wheel-animation.jpg" class="rotate" alt="animated spinning wheel story spins logo"></img>
                       Story Spins
                   </Link>
-                  <span class= 'navbar-text'>by Linda Lewin</span>
+                  <span className="navbar-text">by Linda Lewin</span>
               </div>
               <div>
-                <button ref={this.setNavButtonRef} type="button" id="collbtn" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
+                <button ref={this.setNavButtonRef} type="button" id="collbtn" className="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"
                  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onClick={this.toggleNavbar.bind(this)}>
                   <span className="navbar-toggler-icon"></span>
                 </button>

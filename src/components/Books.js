@@ -21,22 +21,22 @@ class Books extends Component {
 
   render() {
     return(
-      <main class="container">
+      <main className="container">
           <section className="books">
-            <header class="jumbotron my-4">
-              <h1 class="display-4" align="center">Books</h1>
+            <header className="jumbotron my-4">
+              <h1 className="display-4" align="center">Books</h1>
             </header>
           </section>
-          <section class="row text-center">
+          <section className="row text-center">
             {
               this.state.books.map((book, index) =>
-                  <section id={index} class="col-lg-4">
+                  <section id={index} className="col-lg-4">
                     <button>
-                      <img src={book.coverPhoto} class="cover" alt={book.title}
+                      <img src={book.coverPhoto} className="cover" alt={book.title}
                         onClick={this.togglePopup.bind(this, index)}>
                       </img>
                     </button>
-                    <h4 class="card-title">{book.title}</h4>
+                    <h4 className="card-title">{book.title}</h4>
                   </section>
                 )
             }

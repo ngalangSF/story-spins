@@ -16,14 +16,14 @@ class App extends Component {
         <header>
           <Route component={Navbar}/>
         </header>
-        <main>
+        <main id="main">
           <Route exact path="/" component={Landing} />
           <Route path="/books" component={Books} />
           <Route path="/videos" component={Videos} />
           <Route path="/spin-your-own-story" component={SpinStory} />
           <Route path="/bio-contact" component={BioContact} />
         </main>
-        <footer>
+        <footer id="footer">
           <Route component={Footer} />
         </footer>
       </div>
