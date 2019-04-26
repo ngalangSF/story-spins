@@ -22,6 +22,7 @@ class App extends Component {
           <Route path="/videos" component={Videos} />
           <Route path="/spin-your-own-story" component={SpinStory} />
           <Route path="/bio-contact" component={BioContact} />
+          <div id="flush"></div>
         </main>
         <footer id="footer">
           <Route component={Footer} />
