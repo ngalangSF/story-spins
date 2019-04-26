@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
+import Books from './components/Books';
+import Videos from './components/Videos';
+import SpinStory from './components/Spin-Story';
+import BioContact from './components/Bio-Contact';
+import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <header>
+          <Route component={Navbar}/>
+        </header>
+        <main>
+          <Route exact path="/" component={Landing} />
+          <Route path="/books" component={Books} />
+          <Route path="/videos" component={Videos} />
+          <Route path="/spin-your-own-story" component={SpinStory} />
+          <Route path="/bio-contact" component={BioContact} />
+        </main>
+        <footer>
+          <Route component={Footer} />
+        </footer>
+      </div>
+    );
+  }
 }
 
 export default App;
