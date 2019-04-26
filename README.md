@@ -1,3 +1,5 @@
+This project is a demo of my first freelance gig. It's a website for a children's book author who wants to display products and bio/contact information for networking purposes. I created this app with React and used the opportunity to learn more about CSS styling, incorporating Bootstrap and a theme, and React concepts like props and state. I also got to brush up on my graphic designing; the icons on the home page were originally free vectors found online and additionally styled in Photoshop. To run this app, cd into the app folder and run 'npm start' command. Refer to package.json to view dependencies.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
